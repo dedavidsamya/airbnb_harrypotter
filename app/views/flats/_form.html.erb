@@ -1,0 +1,12 @@
+  <div class="booking-container">
+    <%= simple_form_for(flat) do |f| %>
+    <%= f.input :title %>
+    <%= f.input :description %>
+    <%= f.association :location %>
+    <%= f.input :price %>
+    <%= f.input :photos, as: :file, input_html: { multiple: true }%>
+    <%= f.submit %>
+    <% end %>
+  </div>
+
+

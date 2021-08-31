@@ -1,0 +1,16 @@
+// Specific CSS for your home-page
+.home-container {
+    background-image: url(asset-path("train.jpeg"));
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  .pages-container {
+    background-image: url(https://onestepwanderer.com/wp-content/uploads/2019/08/Hogwarts-Castle-Locations.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 60%
+  }

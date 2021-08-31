@@ -1,0 +1,37 @@
+.show-carousel {
+  width: 60%;
+  text-align: center;
+}
+
+.show-carousel img {
+  height: 500px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.show-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info {
+  width: 60%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  border-radius: 24px;
+  background-color: #e7e6e1;
+  color: #0d335d;
+}
+
+.info-nav {
+  border-top: 1px #0d335d solid;
+  padding-top: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-light a {
+  color: #0d335d;
+}

@@ -1,0 +1,29 @@
+
+<br>
+<br>
+<div class="container">
+        <h1>My bookings</h1>
+        <br>
+        <br>
+  <div class="d-flex flex-wrap justify-content-around align-items-center">
+      <% @bookings.each do |booking| %>
+    <% if current_user == booking.flat.user %>
+      <div class="card" style="width: 18rem;">
+       <%= cl_image_tag booking.flat.photos.first.key, class:"card-img-top" %>
+          <div class="card-body">
+          <h5 class="card-title">Booking at <%= link_to booking.flat.title, booking_path(booking) %></h5>
+          <p class="card-text">Message left to host: <%= booking.message %></p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Flying in <%= booking.check_in %></li>
+          <li class="list-group-item">Flying out <%= booking.check_out %></li>
+            </ul>
+        <div class="card-body">
+          <button type="button" class="btn btn-block btn-light">
+            <a href="#" class="card-link"><%= link_to "Check details", booking_path(booking), class:"text-decoration-none"%></a> </button>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+  </div>
+</div>
